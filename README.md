@@ -4,7 +4,7 @@
 und Bookings zu verwalten.</p>
 <h3>Backend</h3>
 <p>---------------</p>
-<p>Das Backend ist mit Springboot implementiert,und die Sicherheit wird durch Spring Security und JWT-Token gewährleistet(für die Implementierung sehe Pakages <b>config</b> und <b>utils</b>). Jeder API-Zugriff erfordert ein gültiges JWT-Token, das beim erfolgreichen Login eines Benutzers generiert wird. Die Rollenbasierte Autorisierung ist implementiert, wodurch verschiedene Endpunkte je nach Benutzerrolle zugänglich sind. Zum Beispiel können Administratoren auf administratives Dashboard zugreifen, während normale Benutzer auf die Hauptseite und Funktionen zur Fahrzeugauswahl zugreifen können.</p>
+<p>Das Backend ist mit Springboot implementiert,und die Sicherheit wird durch Spring Security und JWT-Token gewährleistet. Jeder API-Zugriff erfordert ein gültiges JWT-Token, das beim erfolgreichen Login eines Benutzers generiert wird. Die Rollenbasierte Autorisierung ist implementiert, wodurch verschiedene Endpunkte je nach Benutzerrolle zugänglich sind. Zum Beispiel können Administratoren auf administratives Dashboard zugreifen, während normale Benutzer auf die Hauptseite und Funktionen zur Fahrzeugauswahl zugreifen können. für die Implementierung der Sicherheit und JWT-Token sehe Packages <b>config</b> und <b>utils</b></p>
 <h3>Login und JWT Token generierung:  </h3>
 <img src="screenshots/postmanlogin.PNG" width="600" height="500">
 <h3>Navigation mit JWT Token:</h3>
