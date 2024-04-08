@@ -18,13 +18,24 @@ und Bookings zu verwalten.</p>
 <img src="screenshots/login.PNG" width="600" height="500">
 <h3>Customer Views:</h3>
 <p>................</p>
-<h3>Dashboard</h3>
+<h3>Dashboard:</h3>
 <p>in Dashboard werden alle Autos gezeigt, falls ein Auto von einem Kunde schon gebucht oder gemietet ist, wird die "book car" button nicht gezeigt.</p>
 <img src="screenshots/CustomDashboard.PNG" width="800" height="700">
-<h3>Book Car View</h3>
+<h3>Book Car View:</h3>
 <p>Customer kann ein Auto buchen, die buchung wird dann auf Buchung warteliste gesetzt bis der Admin sie bestätigt oder halt absagt </p>
 <img src="screenshots/bookCar.PNG" width="800" height="700">
-<h3>My Bookings View</h3>
+<h3>My Bookings View:</h3>
 <p>Hier kann der Kunde sehen ob seine Buchung bestätigt oder abgesagt wurde oder halt noch nicht bearbeitet</p>
 <img src="screenshots/bookings.PNG" width="800" height="700">
-
+<h3>Admin Views:</h3>
+<p>................</p>
+<p>Der Admin kann neue Autos hinzufügen, updaten oder löschen, er kann auch Buchungen verwalten.</p>
+<h3>Dashboard:</h3>
+<img src="screenshots/adminDashboard.PNG" width="600" height="500">
+<h3>Update Car View:</h3>
+<img src="screenshots/updateCar.PNG" width="600" height="500">
+<h3>Add Car View:</h3>
+<img src="screenshots/addCar.PNG" width="600" height="500">
+<h3>Bookings View:</h3>
+<p>Hier kann Admin die Buchung bestätigen oder löschen, die aktuelle Buchung Statue wird auch in Customer Booking View angezeigt.</p>
+<img src="screenshots/bookingAdmin.PNG" width="600" height="500">
