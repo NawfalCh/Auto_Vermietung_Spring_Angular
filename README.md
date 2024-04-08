@@ -16,3 +16,8 @@ und Bookings zu verwalten.</p>
 <h3>Signup und Login Views</h3>
 <img src="screenshots/signup.PNG" width="600" height="500">
 <img src="screenshots/login.PNG" width="600" height="500">
+<h3>Customer Views:</h3>
+<p>................</p>
+<h3>Dashboard</h3>
+<img src="screenshots/CustomDashboard.PNG" width="800" height="700">
+
