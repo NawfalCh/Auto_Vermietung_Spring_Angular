@@ -14,7 +14,7 @@ und Bookings zu verwalten.</p>
 <p>---------------</p>
 <p>Das Frontend ist mit Angular 16 implementiert, und der Kommunikation mit Bachend erfoglt durch Rest API mit JWT-Token in Headers</p>
 <h3>Signup und Login Views</h3>
-<img src="screenshots/signup.PNG" width="600" height="500">
+<img src="screenshots/signup.PNG" width="700" height="800">
 <img src="screenshots/login.PNG" width="600" height="500">
 <h3>Customer Views:</h3>
 <p>................</p>
