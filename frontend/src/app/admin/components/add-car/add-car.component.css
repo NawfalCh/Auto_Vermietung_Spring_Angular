@@ -1,0 +1,27 @@
+
+.matCard{
+  text-align: -webkit-center;
+  max-width: 80%;
+  margin: 2em;
+}
+
+.demo-full-width {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 8px; /* Abstand zwischen den Formularfeldern */
+}
+
+.button1 {
+  background-color: #008CBA; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

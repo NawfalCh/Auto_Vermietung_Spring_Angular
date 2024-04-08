@@ -1,0 +1,49 @@
+<div *ngIf="car" class="car-list-container">
+
+  <mat-card  class="car-card">
+    <mat-card-header>
+      <mat-card-title> {{car.brand}}</mat-card-title>
+      <mat-card-subtitle>{{car.model}}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="car-image-container">
+      <img class="car-image" mat-card-image [src]="getCarImage(car.image)" alt="Car Image">
+    </div>
+    <mat-card-content>
+      <p>Color: <b>{{ car.color }}</b></p>
+      <p>Year: <b>{{ car.year }}</b></p>
+      <p>Price: <b>{{ car.price }}</b></p>
+      <p>transmission: <b>{{ car.transmission }}</b></p>
+      <p>Fuel Type: <b>{{ car.fuelType }}</b></p>
+
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+
+  </mat-card>
+
+  <div class="container">
+    <mat-form-field class="example-full-width">
+      <mat-label>From Date</mat-label>
+      <input matInput [matDatepicker]="fromDatepicker" [(ngModel)]="fromDate" (dateChange)="calculateDaysCount(car.price)">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="fromDatepicker"></mat-datepicker-toggle>
+      <mat-datepicker #fromDatepicker></mat-datepicker>
+    </mat-form-field>
+    <span class="abstand"></span>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>To Date</mat-label>
+      <input matInput [matDatepicker]="toDatepicker" [(ngModel)]="toDate" (dateChange)="calculateDaysCount(car.price)">
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="toDatepicker"></mat-datepicker-toggle>
+      <mat-datepicker #toDatepicker></mat-datepicker>
+    </mat-form-field>
+
+    <span class="abstand"></span>
+
+    <button mat-raised-button color="primary"  (click)="bookCar()">book this Car</button>
+  </div>
+  <div class="container"><p class="bordder"><b>Total Price : </b> {{ price !== 0.0 ? price  : "0.0" }} Euros </p></div>
+
+
+</div>

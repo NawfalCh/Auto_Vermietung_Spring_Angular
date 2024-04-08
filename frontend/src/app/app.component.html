@@ -1,0 +1,36 @@
+<mat-toolbar *ngIf="!isAdminLoggedIn && !isCustomerLoggedIn" color="primary">
+<button mat-button routerLink="login"><h2>Auto Vermietung</h2></button>
+
+<span class="spacer"></span>
+
+<button mat-button routerLink="registration" routerLinkActive="active">signup</button>
+<button mat-button routerLink="login" routerLinkActive="active">login</button>
+</mat-toolbar>
+
+
+<mat-toolbar *ngIf="isAdminLoggedIn" color="primary">
+  <button mat-button routerLink=""><h2>LoggedIn Admin</h2></button>
+
+  <span class="spacer"></span>
+
+  <button mat-button routerLink="/admin/dashboard" routerLinkActive="active">Dashboard</button>
+  <button mat-button routerLink="/admin/addcar" routerLinkActive="active">AddCar</button>
+  <button mat-button routerLink="/admin/bookings" routerLinkActive="active">Bookings</button>
+  <button mat-button (click)="logout()" routerLinkActive="active">logout</button>
+</mat-toolbar>
+
+
+<mat-toolbar *ngIf="isCustomerLoggedIn" color="primary">
+  <button mat-button routerLink="login"><h2>LoggedIn Customer</h2></button>
+
+  <span class="spacer"></span>
+
+  <button mat-button routerLink="/customer/dashboard" routerLinkActive="active">Dashboard</button>
+  <button mat-button routerLink="/customer/my-bookings" routerLinkActive="active">My Bookings</button>
+  <button mat-button (click)="logout()" routerLinkActive="active">logout</button>
+</mat-toolbar>
+
+
+<router-outlet>
+
+</router-outlet>

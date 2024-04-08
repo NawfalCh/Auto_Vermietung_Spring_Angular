@@ -1,0 +1,33 @@
+<h2>Car List</h2>
+
+<div *ngIf="cars.length > 0; else noCars" class="car-list-container">
+
+  <mat-card *ngFor="let car of cars" class="car-card">
+    <mat-card-header>
+      <mat-card-title> {{car.brand}}</mat-card-title>
+      <mat-card-subtitle>{{car.model}}</mat-card-subtitle>
+    </mat-card-header>
+    <div class="car-image-container">
+      <img class="car-image" mat-card-image [src]="getCarImage(car.image)" alt="Car Image">
+    </div>
+    <mat-card-content>
+      <p>Color: <b>{{ car.color }}</b></p>
+      <p>Year: <b>{{ car.year }}</b></p>
+      <p>Price: <b>{{ car.price }}</b></p>
+      <p>transmission: <b>{{ car.transmission }}</b></p>
+      <p>Fuel Type: <b>{{ car.fuelType }}</b></p>
+
+    </mat-card-content>
+    <mat-card-actions *ngIf="!carAvailabilityMap[car.carId]">
+      <button mat-stroked-button color="primary" routerLink="/customer/booking/{{car.carId}}" >book Car</button>
+    </mat-card-actions>
+    <mat-card-actions *ngIf="carAvailabilityMap[car.carId]">
+      <p style="color: red"> Car is not available at the moment</p>
+    </mat-card-actions>
+
+  </mat-card>
+
+</div>
+<ng-template #noCars>
+  <p>No cars available.</p>
+</ng-template>

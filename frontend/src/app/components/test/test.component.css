@@ -1,0 +1,9 @@
+.matCard{
+  text-align: -webkit-center;
+  max-width: 80%;
+  margin: 2em;
+}
+
+.demo-full-width {
+  width: 100%;
+}

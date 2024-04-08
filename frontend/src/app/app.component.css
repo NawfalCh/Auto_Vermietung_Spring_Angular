@@ -1,0 +1,7 @@
+.spacer {
+  flex: 1; /* Dies bewirkt, dass der Span den verfügbaren Raum zwischen den Buttons ausfüllt */
+}
+
+.mat-button {
+  margin-left: 8px; /* Fügt einen Abstand von 8 Pixeln zwischen den Buttons hinzu */
+}

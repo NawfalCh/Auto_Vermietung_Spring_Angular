@@ -1,0 +1,20 @@
+<table>
+  <thead>
+  <tr>
+    <th>From</th>
+    <th>To</th>
+    <th>Days</th>
+    <th>Price</th>
+    <th>Status</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let booking of bookings">
+    <td>{{ booking.fromDate | date:'MMM d, y'}}</td>
+    <td>{{ booking.toDate | date:'MMM d, y'}}</td>
+    <td>{{ booking.bookingDays }}</td>
+    <td>{{ booking.price }} Euros</td>
+    <td [ngStyle]="getStatusColor(booking.status)">{{ booking.status }}</td>
+  </tr>
+  </tbody>
+</table>

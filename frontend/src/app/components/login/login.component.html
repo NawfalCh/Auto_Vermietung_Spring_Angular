@@ -1,0 +1,27 @@
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Log in</mat-card-title>
+    </mat-card-header>
+    <form [formGroup]="loginForm" class="example-form">
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" formControlName="email" required>
+          <mat-hint>Email</mat-hint>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Password" formControlName="password" required>
+          <mat-hint>Password</mat-hint>
+        </mat-form-field>
+      </mat-card-content>
+      <button mat-raised-button color="primary" class="submit-button" (click)="login()" [disabled]="loginForm.invalid" >Log in</button>
+    </form>
+  </mat-card>
+  <div>
+    <ul>admin:
+      <li>email: admin@email.com</li>
+      <li>password: admin123</li>
+    </ul>
+
+  </div>
+</div>
