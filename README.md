@@ -19,5 +19,12 @@ und Bookings zu verwalten.</p>
 <h3>Customer Views:</h3>
 <p>................</p>
 <h3>Dashboard</h3>
+<p>in Dashboard werden alle Autos gezeigt, falls ein Auto von einem Kunde schon gebucht oder gemietet ist, wird die "book car" button nicht gezeigt.</p>
 <img src="screenshots/CustomDashboard.PNG" width="800" height="700">
+<h3>Book Car View</h3>
+<p>Customer kann ein Auto buchen, die buchung wird dann auf Buchung warteliste gesetzt bis der Admin sie bestätigt oder halt absagt </p>
+<img src="screenshots/bookCar.PNG" width="800" height="700">
+<h3>My Bookings View</h3>
+<p>Hier kann der Kunde sehen ob seine Buchung bestätigt oder abgesagt wurde oder halt noch nicht bearbeitet</p>
+<img src="screenshots/bookings.PNG" width="800" height="700">
 
