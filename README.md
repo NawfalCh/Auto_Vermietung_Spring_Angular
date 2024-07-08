@@ -1,6 +1,6 @@
 <h1>Auto Vermietung App</h1>
 
-<p>Die Autovermietungsplattform ermöglicht es Benutzern, Autos zu mieten, um die Plattform zu benutzen, muss der Benutzer erstmal zu registrieren und dann sich einlogen. Die App hat auch ein Admin Profile, um die Autos
+<p>Die Autovermietungsplattform ermöglicht es Benutzern, Autos zu mieten. Um die Plattform zu benutzen, muss sich der Benutzer erstmal registrieren und dann sich einlogen. Die App hat auch ein Admin Profile, um die Autos
 und Bookings zu verwalten.</p>
 <h3>Backend</h3>
 <p>---------------</p>
